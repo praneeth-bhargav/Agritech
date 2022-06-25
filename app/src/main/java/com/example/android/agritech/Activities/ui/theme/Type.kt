@@ -1,4 +1,4 @@
-package com.example.android.agritech.ui.theme
+package com.example.android.agritech.Activities.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

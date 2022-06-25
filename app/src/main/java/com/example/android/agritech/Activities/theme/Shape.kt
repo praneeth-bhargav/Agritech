@@ -1,4 +1,4 @@
-package com.example.android.agritech.ui.theme
+package com.example.android.agritech.Activities.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

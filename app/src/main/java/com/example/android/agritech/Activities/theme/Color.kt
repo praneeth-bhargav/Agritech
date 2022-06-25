@@ -1,8 +1,8 @@
-package com.example.android.agritech.ui.theme
+package com.example.android.agritech.Activities.theme
 
 import androidx.compose.ui.graphics.Color
 
-val primaryColor = Color(0xFF76ff03)
+val primaryColor = Color(0xFF59C002)
 val primaryLightColor = Color(0xFFb0ff57)
 val primaryDarkColor = Color(0xFF32cb00)
 val secondaryColor=Color(0xFFf57f17)

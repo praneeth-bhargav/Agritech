@@ -1,11 +1,10 @@
-package com.example.android.agritech.ui.theme
+package com.example.android.agritech.Activities.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
     primary= primaryColor,
@@ -27,13 +26,13 @@ private val LightColorPalette = lightColors(
     primaryVariant= primaryLightColor,
     secondary= secondaryColor,
     secondaryVariant= secondaryDarkColor,
-    background= primaryLightColor,
+    background= white,
     surface= primaryLightColor,
     error= RedErrorDark,
     onPrimary= white,
     onSecondary= white,
-    onBackground= white,
-    onSurface= white,
+    onBackground= black,
+    onSurface= black,
     onError= RedErrorLight,
 
     /* Other default colors to override
