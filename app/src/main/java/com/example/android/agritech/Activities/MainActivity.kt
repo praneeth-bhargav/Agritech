@@ -20,6 +20,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.android.agritech.Activities.ui.theme.AgritechTheme
+import com.example.android.agritech.Activities.ui.theme.primaryDarkColor
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +33,7 @@ class MainActivity : ComponentActivity() {
                 mutableStateOf("")
             }
 
-            var mContext=LocalContext.current
+            val mContext=LocalContext.current
             AgritechTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
@@ -74,11 +75,13 @@ class MainActivity : ComponentActivity() {
                         //========================
                         Spacer(modifier = Modifier.height(10.dp))
                         //TODO 1
-                        Button(onClick = { }) {
+                        Button(onClick = {
+                            mContext.startActivity(Intent(mContext,HomeActivity::class.java))
+                        }) {
                             Text(text = "Sign in")
                         }
                         Spacer(modifier = Modifier.height(20.dp))
-                        Text(text = "Don't have an Account? Sign up!",color= Color(0xFF32cb00),
+                        Text(text = "Don't have an Account? Sign up!",color= primaryDarkColor,
                         modifier = Modifier.clickable { mContext.
                         startActivity(Intent(mContext,SignUpActivity::class.java)) })
                     }

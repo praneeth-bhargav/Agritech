@@ -14,14 +14,28 @@
         android:theme="@style/Theme.Agritech"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
+            android:name=".Activities.ProfileActivity"
+            android:exported="false"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/Theme.Agritech" />
+        <activity
+            android:name=".Activities.OrdersActivity"
+            android:exported="false"
+            android:label="@string/title_activity_orders"
+            android:theme="@style/Theme.Agritech" />
+        <activity
+            android:name=".Activities.DashboardActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/Theme.Agritech" />
+        <activity
+            android:name=".Activities.HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.Agritech" />
         <activity
             android:name=".Activities.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Agritech">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,8 +46,7 @@
         <activity
             android:name=".Activities.SignUpActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Agritech"></activity>
+            android:theme="@style/Theme.Agritech" />
     </application>
 
 </manifest>
