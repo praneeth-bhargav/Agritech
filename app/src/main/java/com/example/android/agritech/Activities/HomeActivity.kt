@@ -118,36 +118,6 @@ class HomeActivity : ComponentActivity() {
                                 DisplayCard(Crops("Spinach", 23, 20,R.drawable.spinach))
                                 DisplayCard(Crops("Potato", 23, 20,R.drawable.moong))
                             }
-                            val configuration = LocalConfiguration.current
-
-                            val screenHeight = configuration.screenHeightDp.dp
-                            val screenWidth = configuration.screenWidthDp.dp
-                            BottomNavigation(modifier = Modifier.width(screenWidth)){
-                                val items = listOf("Home", "Dashboard", "Orders","Profile")
-                                items.forEachIndexed { index, item ->
-                                    BottomNavigationItem(
-                                        icon = { Icon(Icons.Filled.Star , contentDescription = null) },
-                                        label = { Text(item) },
-                                        selected = selectedItem == index,
-                                        onClick = { selectedItem = index
-                                            when (selectedItem){
-                                                0->{
-
-                                                }
-                                                1->{
-                                                    mContext.startActivity(Intent(mContext,DashboardActivity::class.java))
-                                                }
-                                                2->{
-                                                    mContext.startActivity(Intent(mContext,OrdersActivity::class.java))
-                                                }
-                                                3->{
-                                                    mContext.startActivity(Intent(mContext,ProfileActivity::class.java))
-                                                }
-                                            }
-                                        }
-                                    )
-                                }
-                            }
                         }
 
 

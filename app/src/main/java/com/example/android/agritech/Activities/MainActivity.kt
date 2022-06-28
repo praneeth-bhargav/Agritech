@@ -76,7 +76,7 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.height(10.dp))
                         //TODO 1
                         Button(onClick = {
-                            mContext.startActivity(Intent(mContext,HomeActivity::class.java))
+                            mContext.startActivity(Intent(mContext,BottomNavBarActivity::class.java))
                         }) {
                             Text(text = "Sign in")
                         }

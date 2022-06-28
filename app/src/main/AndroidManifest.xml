@@ -14,19 +14,9 @@
         android:theme="@style/Theme.Agritech"
         tools:targetApi="31">
         <activity
-            android:name=".Activities.ProfileActivity"
+            android:name=".Activities.BottomNavBarActivity"
             android:exported="false"
-            android:label="@string/title_activity_profile"
-            android:theme="@style/Theme.Agritech" />
-        <activity
-            android:name=".Activities.OrdersActivity"
-            android:exported="false"
-            android:label="@string/title_activity_orders"
-            android:theme="@style/Theme.Agritech" />
-        <activity
-            android:name=".Activities.DashboardActivity"
-            android:exported="false"
-            android:label="@string/title_activity_dashboard"
+            android:label="@string/title_activity_bottom_nav_bar"
             android:theme="@style/Theme.Agritech" />
         <activity
             android:name=".Activities.HomeActivity"
